@@ -33,3 +33,36 @@ rl.question('Introduce el número de habitación: ', (habitacion) => {
   console.log(`La habitación ${numHabitacion} está en el piso ${piso}`);
   rl.close();
 });
+
+//// anexando compilacion de iformacion de clase
+
+
+// console.log(`Math.round(${numero}) -> ${Math.round(numero)}`);
+// console.log(`Math.floor(${numero}) -> ${Math.floor(numero)}`);
+// console.log(`Math.ceil(${numero}) -> ${Math.ceil(numero)}`);
+// console.log(`Math.sqrt(${numero}) -> ${Math.sqrt(numero)}`);
+// console.log(`Math.pow(${numero},3) -> ${Math.pow(numero,3)}`);
+// console.log(`Math.abs(${numero}) -> ${Math.abs(numero)}`);
+
+// console.log(`Math.max(${numero},10,-5) -> ${Math.max(numero,10,-5)}`);
+// console.log(`Math.min(${numero},-5,30) -> ${Math.min(numero,-5,30)}`);
+
+// console.log(`Math.random() -> ${Math.random()}`);
+// let randomNum = Math.floor(Math.random() * numero) + 1;
+// console.log(`Número aleatorio entre 1 y ${numero} -> ${randomNum}`);
+
+// console.log(`toFixed(2): ${numero}`);
+// rl.close();
+
+// Math.round(numero): Redondea el número al entero más cercano.
+// Math.floor(numero): Redondea el número hacia abajo al entero más cercano.
+// Math.ceil(numero): Redondea el número hacia arriba al entero más cercano.
+// Math.sqrt(numero): Calcula la raíz cuadrada del número.
+// Math.pow(numero, 3): Eleva el número al cubo (potencia de 3).
+// Math.abs(numero): Devuelve el valor absoluto del número (sin signo).
+// Math.max(numero, 10, -5): Devuelve el valor más grande entre el número, 10 y -5.
+// Math.min(numero, -5, 30): Devuelve el valor más pequeño entre el número, -5 y 30.
+// Math.random(): Genera un número decimal aleatorio entre 0 (incluido) y 1 (excluido).
+// Math.floor(Math.random() * numero) + 1: Genera un número entero aleatorio entre 1 y el valor de numero.
+// toFixed(2): Muestra el número con dos decimales.
+// rl.close(): Cierra la interfaz de lectura de datos por consola
