@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 })
  
 
-// Escriba un programa que solicite al usuario una cadena de texto (palabra o frase)
+// 1. Escriba un programa que solicite al usuario una cadena de texto (palabra o frase)
 // utilizando la librería readline, el programa debe de contener una función que permita
 // recibir la cadena ingresada y devuelva una cadena con todas sus letras ordenadas
 // alfabéticamente.
@@ -29,18 +29,7 @@ const rl = readline.createInterface({
 //     rl.close();
 // });
 
-
-
-// const ordenarAlfabeticamente = (cadena) => {
-//     return cadena.split('').sort((a, b) => a.localeCompare(b)).join('');
-// }
-//  rl.question("Ingrese una palabra o una frase: \n", (cadena) => {
-//     const resultado = ordenarAlfabeticamente(cadena);
-//     console.log(`La cadena ordenada alfabéticamente es: ${resultado}`);
-//     rl.close();
-// });
-
-// Escriba un programa que solicite al usuario una cadena de texto, este programa debe
+// 2.  Escriba un programa que solicite al usuario una cadena de texto, este programa debe
 // de contener una función que reciba la cadena como parámetro y devuelva una nueva
 // cadena donde la primera letra de cada palabra esté en mayúsculas
 
@@ -59,9 +48,9 @@ const rl = readline.createInterface({
 // });
 
 
-// Escriba un programa que solicite al usuario una palabra o cadena de texto, crea una
+// 3. Escriba un programa que solicite al usuario una palabra o cadena de texto, crea una
 // función que reciba como parámetro el texto y devuelva la cantidad de caracteres que
-// contiene. 
+// contiene. (2 formas de hacerlo)
 
 
 // rl.question("Ingrese una palabra o una frase: \n", (cadena) => {
@@ -81,28 +70,22 @@ const rl = readline.createInterface({
 //     rl.close()
 // })
 
-// Escriba un programa que solicite al usuario el precio de tres productos, y cree una
+// 4. Escriba un programa que solicite al usuario el precio de tres productos, y cree una
 // función que permita calcular la suma total del precio de los tres productos, mostrar
 // en consola la suma.
 
 
-// const precios = [];
+// rl.question("ingrese el primer precio del producto: ", (p1) => {
+//     rl.question("Ingrese el segundo precio del producto: ", (p2) => {
+//         rl.question("Ingrese el tercer precio del producto: ", (p3) => {
+//             let total = Number(p1) + Number(p2) + Number(p3)
+//             console.log('Suma total es de: '+ total);
+//             rl.close();
+//         })
+//     })
+// })
 
-// rl.question("Ingrese el primer precio del producto:", (precio1) => {
-//     precios[0] = parseFloat(precio1);
-//     rl.question("Ingrese el segundo precio del producto:", (precio2) => {
-//     precios[1] = parseFloat(precio2);
-//     rl.question("Ingrese el tercer precio del producto:", (precio3) => {
-//     precios[2] = parseFloat(precio3);
-        
-//     let suma = precios[0] + precios[1] + precios[2]
-//         console.log("La suma total de los 3 productos es:", suma);
-//          rl.close();
-//    });
-//  });  
-// });
-
-// Solicite al usuario una cadena y utilice una función que permita devolver el texto en
+// 5. Solicite al usuario una cadena y utilice una función que permita devolver el texto en
 // mayúsculas. 
 
 
@@ -112,28 +95,24 @@ const rl = readline.createInterface({
 //     rl.close();
 // });
 
-// Solicite al usuario una temperatura en grados celsius y cree una función que permita
+//6.  Solicite al usuario una temperatura en grados celsius y cree una función que permita
 // convertir esa temperatura Celsius a Fahrenheit. 
 
-// function celsiusAFahrenheit(celsius) {
-//     let fahrenheit = (celsius * 9/5) + 32;
-//     return fahrenheit;
+// function CelAFah (celsius) {
+//     let farenheit = (celsius * 9/5) + 32;
+//     return farenheit
 // }
 
-// rl.question('Ingresa la temperatura en Celsius: ', (temperaturaCelsius) => {
-    // Convertir el texto a número
-//     let celsius = Number(temperaturaCelsius);
-    
-//     let fahrenheit = celsiusAFahrenheit(celsius);
+// rl.question("Ingrese su temperatura en grados C: ", (temp) => {
+//     let celsius= Number(temp);
 
-//     console.log(`${celsius}°C = ${fahrenheit}°F`);
+//     let farenheit = CelAFah(celsius);
+
+//     console.log(`${celsius}C = ${farenheit}`);
 //     rl.close();
 // });
 
-
-
-
-// Cree una función que permita calcular el descuento de un producto. Solicite al usuario
+// 7. Cree una función que permita calcular el descuento de un producto. Solicite al usuario
 // el precio de un producto y el porcentaje de descuento, devuelva el precio final. 
 
 // function precios(p1, p2, p3) {
@@ -153,7 +132,7 @@ const rl = readline.createInterface({
 //         })
 //     })
 // })
-// Cree un programa que solicite al usuario su salario base, el número de horas extras
+// 8. Cree un programa que solicite al usuario su salario base, el número de horas extras
 // trabajadas y el valor de una hora de trabajo normal. Luego, calcule el salario total,
 // considerando que cada hora extra se paga 1.5 del valor de la hora normal. Mostrar el
 // resultado en la consola. 
